@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,101 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+  font-family: 'Righteous', cursive;
+  color: lightcoral;
+  line-height: 1.7;
+  font-size: 19px;
+  background-color: #222222;
+  background-size: 1500px;
+  background-repeat: no repeat;
+  background-position: center;
+  background-image: url(./assets/milky-way-.png);
+  background-blend-mode: soft-light;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  color: #efefef;
+  display: inline-block;
+  padding: 3px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+.link:hover {
+  color: #94f5e5;
+  transform: scale(1.7);
+}
+
+.apod-photo {
+  display: flex;
+  padding: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.apod-photo img {
+  width: 50%;
+  margin-right: 50px;
+  object-fit: full;
+  max-height: 70vh;
+  border: 2px solid rgb(129, 129, 129);
+  border-radius: 15px;
+}
+
+.apod-photo h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.apod-photo .date {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.apod-photo .explanation {
+  color: #bbb;
+}
+
+@media (max-width: 1280px) {
+  .apod-photo {
+    display: block;
+  }
+
+  .apod-photo img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-link {
+  font-size: 40px;
+  display: inline-block;
+  color: rgba(183, 74, 255, 0.7);
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+.home-link:hover {
+  color: #94f5e5;
+  transform: scale(1.4);
 }

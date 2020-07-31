@@ -1,14 +1,19 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter} from 'react-router-dom';
+import './App.css';
+import Home from './components/Home';
+import Photo from './components/Photo';
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
-    </div>
+    
+    <BrowserRouter>
+      <div className="app">
+      <Home />
+      <Photo />
+      </div>
+  </BrowserRouter>
+ 
   );
 }
 
